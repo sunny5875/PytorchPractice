@@ -1,0 +1,20 @@
+PODS:
+  - LibTorch-Lite-Nightly (1.14.0.20221109):
+    - LibTorch-Lite-Nightly/Core (= 1.14.0.20221109)
+  - LibTorch-Lite-Nightly/Core (1.14.0.20221109):
+    - LibTorch-Lite-Nightly/Torch
+  - LibTorch-Lite-Nightly/Torch (1.14.0.20221109)
+
+DEPENDENCIES:
+  - LibTorch-Lite-Nightly
+
+SPEC REPOS:
+  trunk:
+    - LibTorch-Lite-Nightly
+
+SPEC CHECKSUMS:
+  LibTorch-Lite-Nightly: 5d5da9f78f653cec0e1998869a87ec9fb98d9431
+
+PODFILE CHECKSUM: 601efe7437bacf9636d0c61ac6b8b00d6c2e22c5
+
+COCOAPODS: 1.15.2

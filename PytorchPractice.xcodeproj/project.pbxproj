@@ -1,0 +1,744 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C4077B7156971BD6419F2863 /* libPods-PytorchPractice.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B5D441376341A048FF650C0D /* libPods-PytorchPractice.a */; };
+		D685C6D32BD74710009AB097 /* result.json in Resources */ = {isa = PBXBuildFile; fileRef = D685C6D22BD74710009AB097 /* result.json */; };
+		D685C6D42BD763C9009AB097 /* model.ptl in Resources */ = {isa = PBXBuildFile; fileRef = D685C6D12BD7470A009AB097 /* model.ptl */; };
+		D685C6D62BD7683F009AB097 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D685C6D52BD7683F009AB097 /* MainTabView.swift */; };
+		D685C6D82BD768D2009AB097 /* TestModelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D685C6D72BD768D2009AB097 /* TestModelView.swift */; };
+		D6A60F9C2BD100BA000AB98A /* image_classification.ptl in Resources */ = {isa = PBXBuildFile; fileRef = D6A60F962BD100B4000AB98A /* image_classification.ptl */; };
+		D6A60F9D2BD100BA000AB98A /* words.txt in Resources */ = {isa = PBXBuildFile; fileRef = D6A60F972BD100B4000AB98A /* words.txt */; };
+		D6A60FA02BD100BA000AB98A /* image.png in Resources */ = {isa = PBXBuildFile; fileRef = D6A60F9B2BD100BA000AB98A /* image.png */; };
+		D6A60FA52BD100D9000AB98A /* TorchModule.mm in Sources */ = {isa = PBXBuildFile; fileRef = D6A60FA32BD100D9000AB98A /* TorchModule.mm */; };
+		D6A60FA72BD10271000AB98A /* UIImage+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A60FA62BD10271000AB98A /* UIImage+Helper.swift */; };
+		D6EC50C12BD0D37E0067AC51 /* PytorchPracticeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6EC50C02BD0D37E0067AC51 /* PytorchPracticeApp.swift */; };
+		D6EC50C32BD0D37E0067AC51 /* TestImageClassificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6EC50C22BD0D37E0067AC51 /* TestImageClassificationView.swift */; };
+		D6EC50C52BD0D37F0067AC51 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6EC50C42BD0D37F0067AC51 /* Assets.xcassets */; };
+		D6EC50C92BD0D37F0067AC51 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6EC50C82BD0D37F0067AC51 /* Preview Assets.xcassets */; };
+		D6EC50D32BD0D37F0067AC51 /* PytorchPracticeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6EC50D22BD0D37F0067AC51 /* PytorchPracticeTests.swift */; };
+		D6EC50DD2BD0D37F0067AC51 /* PytorchPracticeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6EC50DC2BD0D37F0067AC51 /* PytorchPracticeUITests.swift */; };
+		D6EC50DF2BD0D37F0067AC51 /* PytorchPracticeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6EC50DE2BD0D37F0067AC51 /* PytorchPracticeUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D6EC50CF2BD0D37F0067AC51 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D6EC50B52BD0D37E0067AC51 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D6EC50BC2BD0D37E0067AC51;
+			remoteInfo = PytorchPractice;
+		};
+		D6EC50D92BD0D37F0067AC51 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D6EC50B52BD0D37E0067AC51 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D6EC50BC2BD0D37E0067AC51;
+			remoteInfo = PytorchPractice;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		02FBDC9FA2C0E53CF02CC78D /* Pods-PytorchPractice.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PytorchPractice.release.xcconfig"; path = "Target Support Files/Pods-PytorchPractice/Pods-PytorchPractice.release.xcconfig"; sourceTree = "<group>"; };
+		306C71989FAEE582A6F6D789 /* Pods-PytorchPractice.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PytorchPractice.debug.xcconfig"; path = "Target Support Files/Pods-PytorchPractice/Pods-PytorchPractice.debug.xcconfig"; sourceTree = "<group>"; };
+		B5D441376341A048FF650C0D /* libPods-PytorchPractice.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PytorchPractice.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D685C6D12BD7470A009AB097 /* model.ptl */ = {isa = PBXFileReference; lastKnownFileType = file; path = model.ptl; sourceTree = "<group>"; };
+		D685C6D22BD74710009AB097 /* result.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = result.json; sourceTree = "<group>"; };
+		D685C6D52BD7683F009AB097 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		D685C6D72BD768D2009AB097 /* TestModelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestModelView.swift; sourceTree = "<group>"; };
+		D6A1A8FA2BD111DB00349ABC /* LibTorchLitSPM */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = LibTorchLitSPM; path = ../LibTorchLitSPM; sourceTree = "<group>"; };
+		D6A60F962BD100B4000AB98A /* image_classification.ptl */ = {isa = PBXFileReference; lastKnownFileType = file; path = image_classification.ptl; sourceTree = "<group>"; };
+		D6A60F972BD100B4000AB98A /* words.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = words.txt; sourceTree = "<group>"; };
+		D6A60F9B2BD100BA000AB98A /* image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image.png; sourceTree = "<group>"; };
+		D6A60FA12BD100D9000AB98A /* HelloWorld-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "HelloWorld-Bridging-Header.h"; sourceTree = "<group>"; };
+		D6A60FA22BD100D9000AB98A /* TorchModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TorchModule.h; sourceTree = "<group>"; };
+		D6A60FA32BD100D9000AB98A /* TorchModule.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = TorchModule.mm; sourceTree = "<group>"; };
+		D6A60FA62BD10271000AB98A /* UIImage+Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Helper.swift"; sourceTree = "<group>"; };
+		D6EC50BD2BD0D37E0067AC51 /* PytorchPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PytorchPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6EC50C02BD0D37E0067AC51 /* PytorchPracticeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PytorchPracticeApp.swift; sourceTree = "<group>"; };
+		D6EC50C22BD0D37E0067AC51 /* TestImageClassificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestImageClassificationView.swift; sourceTree = "<group>"; };
+		D6EC50C42BD0D37F0067AC51 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D6EC50C62BD0D37F0067AC51 /* PytorchPractice.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PytorchPractice.entitlements; sourceTree = "<group>"; };
+		D6EC50C82BD0D37F0067AC51 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D6EC50CE2BD0D37F0067AC51 /* PytorchPracticeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PytorchPracticeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6EC50D22BD0D37F0067AC51 /* PytorchPracticeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PytorchPracticeTests.swift; sourceTree = "<group>"; };
+		D6EC50D82BD0D37F0067AC51 /* PytorchPracticeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PytorchPracticeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6EC50DC2BD0D37F0067AC51 /* PytorchPracticeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PytorchPracticeUITests.swift; sourceTree = "<group>"; };
+		D6EC50DE2BD0D37F0067AC51 /* PytorchPracticeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PytorchPracticeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D6EC50BA2BD0D37E0067AC51 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4077B7156971BD6419F2863 /* libPods-PytorchPractice.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D6EC50CB2BD0D37F0067AC51 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D6EC50D52BD0D37F0067AC51 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8D8C959500F88B943C68C6C3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				306C71989FAEE582A6F6D789 /* Pods-PytorchPractice.debug.xcconfig */,
+				02FBDC9FA2C0E53CF02CC78D /* Pods-PytorchPractice.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D685C6D92BD76966009AB097 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D685C6D52BD7683F009AB097 /* MainTabView.swift */,
+				D6EC50C22BD0D37E0067AC51 /* TestImageClassificationView.swift */,
+				D685C6D72BD768D2009AB097 /* TestModelView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D6A60F982BD100B4000AB98A /* model */ = {
+			isa = PBXGroup;
+			children = (
+				D685C6D22BD74710009AB097 /* result.json */,
+				D685C6D12BD7470A009AB097 /* model.ptl */,
+				D6A60F962BD100B4000AB98A /* image_classification.ptl */,
+				D6A60F972BD100B4000AB98A /* words.txt */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		D6A60FA42BD100D9000AB98A /* TorchBridge */ = {
+			isa = PBXGroup;
+			children = (
+				D6A60FA12BD100D9000AB98A /* HelloWorld-Bridging-Header.h */,
+				D6A60FA22BD100D9000AB98A /* TorchModule.h */,
+				D6A60FA32BD100D9000AB98A /* TorchModule.mm */,
+			);
+			path = TorchBridge;
+			sourceTree = "<group>";
+		};
+		D6A60FA92BD103BB000AB98A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D6A1A8FA2BD111DB00349ABC /* LibTorchLitSPM */,
+				B5D441376341A048FF650C0D /* libPods-PytorchPractice.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D6EC50B42BD0D37E0067AC51 = {
+			isa = PBXGroup;
+			children = (
+				D6EC50BF2BD0D37E0067AC51 /* PytorchPractice */,
+				D6EC50D12BD0D37F0067AC51 /* PytorchPracticeTests */,
+				D6EC50DB2BD0D37F0067AC51 /* PytorchPracticeUITests */,
+				D6EC50BE2BD0D37E0067AC51 /* Products */,
+				D6A60FA92BD103BB000AB98A /* Frameworks */,
+				8D8C959500F88B943C68C6C3 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		D6EC50BE2BD0D37E0067AC51 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D6EC50BD2BD0D37E0067AC51 /* PytorchPractice.app */,
+				D6EC50CE2BD0D37F0067AC51 /* PytorchPracticeTests.xctest */,
+				D6EC50D82BD0D37F0067AC51 /* PytorchPracticeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D6EC50BF2BD0D37E0067AC51 /* PytorchPractice */ = {
+			isa = PBXGroup;
+			children = (
+				D6A60FA62BD10271000AB98A /* UIImage+Helper.swift */,
+				D685C6D92BD76966009AB097 /* View */,
+				D6EC50C02BD0D37E0067AC51 /* PytorchPracticeApp.swift */,
+				D6EC50C42BD0D37F0067AC51 /* Assets.xcassets */,
+				D6A60F9B2BD100BA000AB98A /* image.png */,
+				D6A60F982BD100B4000AB98A /* model */,
+				D6A60FA42BD100D9000AB98A /* TorchBridge */,
+				D6EC50C62BD0D37F0067AC51 /* PytorchPractice.entitlements */,
+				D6EC50C72BD0D37F0067AC51 /* Preview Content */,
+			);
+			path = PytorchPractice;
+			sourceTree = "<group>";
+		};
+		D6EC50C72BD0D37F0067AC51 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				D6EC50C82BD0D37F0067AC51 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D6EC50D12BD0D37F0067AC51 /* PytorchPracticeTests */ = {
+			isa = PBXGroup;
+			children = (
+				D6EC50D22BD0D37F0067AC51 /* PytorchPracticeTests.swift */,
+			);
+			path = PytorchPracticeTests;
+			sourceTree = "<group>";
+		};
+		D6EC50DB2BD0D37F0067AC51 /* PytorchPracticeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D6EC50DC2BD0D37F0067AC51 /* PytorchPracticeUITests.swift */,
+				D6EC50DE2BD0D37F0067AC51 /* PytorchPracticeUITestsLaunchTests.swift */,
+			);
+			path = PytorchPracticeUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D6EC50BC2BD0D37E0067AC51 /* PytorchPractice */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D6EC50E22BD0D37F0067AC51 /* Build configuration list for PBXNativeTarget "PytorchPractice" */;
+			buildPhases = (
+				879BD6EB0F3D5D94F530ED5C /* [CP] Check Pods Manifest.lock */,
+				D6EC50B92BD0D37E0067AC51 /* Sources */,
+				D6EC50BA2BD0D37E0067AC51 /* Frameworks */,
+				D6EC50BB2BD0D37E0067AC51 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PytorchPractice;
+			productName = PytorchPractice;
+			productReference = D6EC50BD2BD0D37E0067AC51 /* PytorchPractice.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D6EC50CD2BD0D37F0067AC51 /* PytorchPracticeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D6EC50E52BD0D37F0067AC51 /* Build configuration list for PBXNativeTarget "PytorchPracticeTests" */;
+			buildPhases = (
+				D6EC50CA2BD0D37F0067AC51 /* Sources */,
+				D6EC50CB2BD0D37F0067AC51 /* Frameworks */,
+				D6EC50CC2BD0D37F0067AC51 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D6EC50D02BD0D37F0067AC51 /* PBXTargetDependency */,
+			);
+			name = PytorchPracticeTests;
+			productName = PytorchPracticeTests;
+			productReference = D6EC50CE2BD0D37F0067AC51 /* PytorchPracticeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D6EC50D72BD0D37F0067AC51 /* PytorchPracticeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D6EC50E82BD0D37F0067AC51 /* Build configuration list for PBXNativeTarget "PytorchPracticeUITests" */;
+			buildPhases = (
+				D6EC50D42BD0D37F0067AC51 /* Sources */,
+				D6EC50D52BD0D37F0067AC51 /* Frameworks */,
+				D6EC50D62BD0D37F0067AC51 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D6EC50DA2BD0D37F0067AC51 /* PBXTargetDependency */,
+			);
+			name = PytorchPracticeUITests;
+			productName = PytorchPracticeUITests;
+			productReference = D6EC50D82BD0D37F0067AC51 /* PytorchPracticeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D6EC50B52BD0D37E0067AC51 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					D6EC50BC2BD0D37E0067AC51 = {
+						CreatedOnToolsVersion = 15.3;
+					};
+					D6EC50CD2BD0D37F0067AC51 = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = D6EC50BC2BD0D37E0067AC51;
+					};
+					D6EC50D72BD0D37F0067AC51 = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = D6EC50BC2BD0D37E0067AC51;
+					};
+				};
+			};
+			buildConfigurationList = D6EC50B82BD0D37E0067AC51 /* Build configuration list for PBXProject "PytorchPractice" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D6EC50B42BD0D37E0067AC51;
+			productRefGroup = D6EC50BE2BD0D37E0067AC51 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D6EC50BC2BD0D37E0067AC51 /* PytorchPractice */,
+				D6EC50CD2BD0D37F0067AC51 /* PytorchPracticeTests */,
+				D6EC50D72BD0D37F0067AC51 /* PytorchPracticeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D6EC50BB2BD0D37E0067AC51 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6A60F9C2BD100BA000AB98A /* image_classification.ptl in Resources */,
+				D6EC50C92BD0D37F0067AC51 /* Preview Assets.xcassets in Resources */,
+				D6A60F9D2BD100BA000AB98A /* words.txt in Resources */,
+				D6A60FA02BD100BA000AB98A /* image.png in Resources */,
+				D685C6D42BD763C9009AB097 /* model.ptl in Resources */,
+				D685C6D32BD74710009AB097 /* result.json in Resources */,
+				D6EC50C52BD0D37F0067AC51 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D6EC50CC2BD0D37F0067AC51 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D6EC50D62BD0D37F0067AC51 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		879BD6EB0F3D5D94F530ED5C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PytorchPractice-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D6EC50B92BD0D37E0067AC51 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6EC50C32BD0D37E0067AC51 /* TestImageClassificationView.swift in Sources */,
+				D6EC50C12BD0D37E0067AC51 /* PytorchPracticeApp.swift in Sources */,
+				D685C6D82BD768D2009AB097 /* TestModelView.swift in Sources */,
+				D6A60FA52BD100D9000AB98A /* TorchModule.mm in Sources */,
+				D6A60FA72BD10271000AB98A /* UIImage+Helper.swift in Sources */,
+				D685C6D62BD7683F009AB097 /* MainTabView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D6EC50CA2BD0D37F0067AC51 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6EC50D32BD0D37F0067AC51 /* PytorchPracticeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D6EC50D42BD0D37F0067AC51 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6EC50DD2BD0D37F0067AC51 /* PytorchPracticeUITests.swift in Sources */,
+				D6EC50DF2BD0D37F0067AC51 /* PytorchPracticeUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D6EC50D02BD0D37F0067AC51 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D6EC50BC2BD0D37E0067AC51 /* PytorchPractice */;
+			targetProxy = D6EC50CF2BD0D37F0067AC51 /* PBXContainerItemProxy */;
+		};
+		D6EC50DA2BD0D37F0067AC51 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D6EC50BC2BD0D37E0067AC51 /* PytorchPractice */;
+			targetProxy = D6EC50D92BD0D37F0067AC51 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		D6EC50E02BD0D37F0067AC51 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D6EC50E12BD0D37F0067AC51 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		D6EC50E32BD0D37F0067AC51 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 306C71989FAEE582A6F6D789 /* Pods-PytorchPractice.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = PytorchPractice/PytorchPractice.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"PytorchPractice/Preview Content\"";
+				DEVELOPMENT_TEAM = 2YJXRFH75A;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sunny.UniwaffleDesignSystemPractice;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "PytorchPractice/TorchBridge/HelloWorld-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D6EC50E42BD0D37F0067AC51 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 02FBDC9FA2C0E53CF02CC78D /* Pods-PytorchPractice.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = PytorchPractice/PytorchPractice.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"PytorchPractice/Preview Content\"";
+				DEVELOPMENT_TEAM = 2YJXRFH75A;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sunny.UniwaffleDesignSystemPractice;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "PytorchPractice/TorchBridge/HelloWorld-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D6EC50E62BD0D37F0067AC51 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2YJXRFH75A;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sunny.PytorchPracticeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PytorchPractice.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PytorchPractice";
+			};
+			name = Debug;
+		};
+		D6EC50E72BD0D37F0067AC51 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2YJXRFH75A;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sunny.PytorchPracticeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PytorchPractice.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PytorchPractice";
+			};
+			name = Release;
+		};
+		D6EC50E92BD0D37F0067AC51 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2YJXRFH75A;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sunny.PytorchPracticeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PytorchPractice;
+			};
+			name = Debug;
+		};
+		D6EC50EA2BD0D37F0067AC51 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2YJXRFH75A;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sunny.PytorchPracticeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PytorchPractice;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D6EC50B82BD0D37E0067AC51 /* Build configuration list for PBXProject "PytorchPractice" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D6EC50E02BD0D37F0067AC51 /* Debug */,
+				D6EC50E12BD0D37F0067AC51 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D6EC50E22BD0D37F0067AC51 /* Build configuration list for PBXNativeTarget "PytorchPractice" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D6EC50E32BD0D37F0067AC51 /* Debug */,
+				D6EC50E42BD0D37F0067AC51 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D6EC50E52BD0D37F0067AC51 /* Build configuration list for PBXNativeTarget "PytorchPracticeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D6EC50E62BD0D37F0067AC51 /* Debug */,
+				D6EC50E72BD0D37F0067AC51 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D6EC50E82BD0D37F0067AC51 /* Build configuration list for PBXNativeTarget "PytorchPracticeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D6EC50E92BD0D37F0067AC51 /* Debug */,
+				D6EC50EA2BD0D37F0067AC51 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D6EC50B52BD0D37E0067AC51 /* Project object */;
+}
