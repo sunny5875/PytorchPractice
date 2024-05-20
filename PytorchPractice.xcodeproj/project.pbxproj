@@ -12,11 +12,17 @@
 		D685C6D42BD763C9009AB097 /* model.ptl in Resources */ = {isa = PBXBuildFile; fileRef = D685C6D12BD7470A009AB097 /* model.ptl */; };
 		D685C6D62BD7683F009AB097 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D685C6D52BD7683F009AB097 /* MainTabView.swift */; };
 		D685C6D82BD768D2009AB097 /* TestModelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D685C6D72BD768D2009AB097 /* TestModelView.swift */; };
-		D6A60F9C2BD100BA000AB98A /* image_classification.ptl in Resources */ = {isa = PBXBuildFile; fileRef = D6A60F962BD100B4000AB98A /* image_classification.ptl */; };
 		D6A60F9D2BD100BA000AB98A /* words.txt in Resources */ = {isa = PBXBuildFile; fileRef = D6A60F972BD100B4000AB98A /* words.txt */; };
 		D6A60FA02BD100BA000AB98A /* image.png in Resources */ = {isa = PBXBuildFile; fileRef = D6A60F9B2BD100BA000AB98A /* image.png */; };
 		D6A60FA52BD100D9000AB98A /* TorchModule.mm in Sources */ = {isa = PBXBuildFile; fileRef = D6A60FA32BD100D9000AB98A /* TorchModule.mm */; };
 		D6A60FA72BD10271000AB98A /* UIImage+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A60FA62BD10271000AB98A /* UIImage+Helper.swift */; };
+		D6D8767B2BFB251500B82CF1 /* verify.json in Resources */ = {isa = PBXBuildFile; fileRef = D6D8767A2BFB251500B82CF1 /* verify.json */; };
+		D6D876812BFB3C2100B82CF1 /* model 5.ptl in Resources */ = {isa = PBXBuildFile; fileRef = D6D8767C2BFB3C2000B82CF1 /* model 5.ptl */; };
+		D6D876822BFB3C2100B82CF1 /* model 4.ptl in Resources */ = {isa = PBXBuildFile; fileRef = D6D8767D2BFB3C2000B82CF1 /* model 4.ptl */; };
+		D6D876832BFB3C2100B82CF1 /* model 3.ptl in Resources */ = {isa = PBXBuildFile; fileRef = D6D8767E2BFB3C2000B82CF1 /* model 3.ptl */; };
+		D6D876842BFB3C2100B82CF1 /* model 1.ptl in Resources */ = {isa = PBXBuildFile; fileRef = D6D8767F2BFB3C2000B82CF1 /* model 1.ptl */; };
+		D6D876852BFB3C2100B82CF1 /* model 2.ptl in Resources */ = {isa = PBXBuildFile; fileRef = D6D876802BFB3C2000B82CF1 /* model 2.ptl */; };
+		D6D876872BFB3E0E00B82CF1 /* train.json in Resources */ = {isa = PBXBuildFile; fileRef = D6D876862BFB3E0E00B82CF1 /* train.json */; };
 		D6EC50C12BD0D37E0067AC51 /* PytorchPracticeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6EC50C02BD0D37E0067AC51 /* PytorchPracticeApp.swift */; };
 		D6EC50C32BD0D37E0067AC51 /* TestImageClassificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6EC50C22BD0D37E0067AC51 /* TestImageClassificationView.swift */; };
 		D6EC50C52BD0D37F0067AC51 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6EC50C42BD0D37F0067AC51 /* Assets.xcassets */; };
@@ -52,13 +58,19 @@
 		D685C6D52BD7683F009AB097 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 		D685C6D72BD768D2009AB097 /* TestModelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestModelView.swift; sourceTree = "<group>"; };
 		D6A1A8FA2BD111DB00349ABC /* LibTorchLitSPM */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = LibTorchLitSPM; path = ../LibTorchLitSPM; sourceTree = "<group>"; };
-		D6A60F962BD100B4000AB98A /* image_classification.ptl */ = {isa = PBXFileReference; lastKnownFileType = file; path = image_classification.ptl; sourceTree = "<group>"; };
 		D6A60F972BD100B4000AB98A /* words.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = words.txt; sourceTree = "<group>"; };
 		D6A60F9B2BD100BA000AB98A /* image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image.png; sourceTree = "<group>"; };
 		D6A60FA12BD100D9000AB98A /* HelloWorld-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "HelloWorld-Bridging-Header.h"; sourceTree = "<group>"; };
 		D6A60FA22BD100D9000AB98A /* TorchModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TorchModule.h; sourceTree = "<group>"; };
 		D6A60FA32BD100D9000AB98A /* TorchModule.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = TorchModule.mm; sourceTree = "<group>"; };
 		D6A60FA62BD10271000AB98A /* UIImage+Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Helper.swift"; sourceTree = "<group>"; };
+		D6D8767A2BFB251500B82CF1 /* verify.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = verify.json; sourceTree = "<group>"; };
+		D6D8767C2BFB3C2000B82CF1 /* model 5.ptl */ = {isa = PBXFileReference; lastKnownFileType = file; path = "model 5.ptl"; sourceTree = "<group>"; };
+		D6D8767D2BFB3C2000B82CF1 /* model 4.ptl */ = {isa = PBXFileReference; lastKnownFileType = file; path = "model 4.ptl"; sourceTree = "<group>"; };
+		D6D8767E2BFB3C2000B82CF1 /* model 3.ptl */ = {isa = PBXFileReference; lastKnownFileType = file; path = "model 3.ptl"; sourceTree = "<group>"; };
+		D6D8767F2BFB3C2000B82CF1 /* model 1.ptl */ = {isa = PBXFileReference; lastKnownFileType = file; path = "model 1.ptl"; sourceTree = "<group>"; };
+		D6D876802BFB3C2000B82CF1 /* model 2.ptl */ = {isa = PBXFileReference; lastKnownFileType = file; path = "model 2.ptl"; sourceTree = "<group>"; };
+		D6D876862BFB3E0E00B82CF1 /* train.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = train.json; sourceTree = "<group>"; };
 		D6EC50BD2BD0D37E0067AC51 /* PytorchPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PytorchPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6EC50C02BD0D37E0067AC51 /* PytorchPracticeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PytorchPracticeApp.swift; sourceTree = "<group>"; };
 		D6EC50C22BD0D37E0067AC51 /* TestImageClassificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestImageClassificationView.swift; sourceTree = "<group>"; };
@@ -120,10 +132,16 @@
 		D6A60F982BD100B4000AB98A /* model */ = {
 			isa = PBXGroup;
 			children = (
+				D6D8767F2BFB3C2000B82CF1 /* model 1.ptl */,
+				D6D876802BFB3C2000B82CF1 /* model 2.ptl */,
+				D6D8767E2BFB3C2000B82CF1 /* model 3.ptl */,
+				D6D8767D2BFB3C2000B82CF1 /* model 4.ptl */,
+				D6D8767C2BFB3C2000B82CF1 /* model 5.ptl */,
 				D685C6D22BD74710009AB097 /* result.json */,
 				D685C6D12BD7470A009AB097 /* model.ptl */,
-				D6A60F962BD100B4000AB98A /* image_classification.ptl */,
 				D6A60F972BD100B4000AB98A /* words.txt */,
+				D6D8767A2BFB251500B82CF1 /* verify.json */,
+				D6D876862BFB3E0E00B82CF1 /* train.json */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -315,13 +333,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D6A60F9C2BD100BA000AB98A /* image_classification.ptl in Resources */,
+				D6D8767B2BFB251500B82CF1 /* verify.json in Resources */,
 				D6EC50C92BD0D37F0067AC51 /* Preview Assets.xcassets in Resources */,
 				D6A60F9D2BD100BA000AB98A /* words.txt in Resources */,
+				D6D876832BFB3C2100B82CF1 /* model 3.ptl in Resources */,
+				D6D876852BFB3C2100B82CF1 /* model 2.ptl in Resources */,
 				D6A60FA02BD100BA000AB98A /* image.png in Resources */,
+				D6D876872BFB3E0E00B82CF1 /* train.json in Resources */,
 				D685C6D42BD763C9009AB097 /* model.ptl in Resources */,
 				D685C6D32BD74710009AB097 /* result.json in Resources */,
 				D6EC50C52BD0D37F0067AC51 /* Assets.xcassets in Resources */,
+				D6D876822BFB3C2100B82CF1 /* model 4.ptl in Resources */,
+				D6D876842BFB3C2100B82CF1 /* model 1.ptl in Resources */,
+				D6D876812BFB3C2100B82CF1 /* model 5.ptl in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

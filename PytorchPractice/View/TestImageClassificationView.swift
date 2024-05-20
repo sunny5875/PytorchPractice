@@ -31,7 +31,7 @@ struct TestImageClassificationView: View {
     
     // MARK: - image classification
     private var module: TorchModule  {
-        if let filePath = Bundle.main.path(forResource: "image_classification", ofType: "ptl"),
+        if let filePath = Bundle.main.path(forResource: "model 1", ofType: "ptl"),
            let module = TorchModule(fileAtPath: filePath) {
             return module
         } else {

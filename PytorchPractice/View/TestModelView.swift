@@ -5,42 +5,70 @@
 //  Created by 현수빈 on 4/23/24.
 //
 import SwiftUI
+import PhotosUI
 
 struct TestModelView: View {
+    
+    private let modelList: [Int] = [1, 2, 3, 4, 5 ]
     @State private var result: [String] = []
+    
+    @State private var avatarItem: PhotosPickerItem?
+    @State private var avatarImage: Image?
+    
+    
+    @State var isShowing = false
+    @State private var selectedModelIndex: Int = 0
     
     var body: some View {
         NavigationView {
             Form {
-                Section("test model 결과", content: {
+                Section("test model 선택", content: {
+                    ForEach(modelList, id: \.self) { item in
+                        Text("model \(item)")
+                            .onTapGesture {
+                                selectedModelIndex = item
+                                Task {
+                                    predict()
+                                }
+                            }
+                    }
+                })
+                
+                Section("test model \(selectedModelIndex)결과", content: {
                     ForEach(result, id: \.self) {
                         Text($0)
                     }
                 })
             }
             .navigationTitle("Pytorch Practice")
-        }
-        .onAppear {
-            Task {
-                predict()
-            }
+            
         }
     }
     
     
     // MARK: - test model
-    private var module2: TorchModule = {
-        if let filePath = Bundle.main.path(forResource: "model", ofType: "ptl"),
-           let module = TorchModule(fileAtPath: filePath) {
-            return module
-        } else {
-            fatalError("Can't find the model file!")
+    
+    private var testData: [String: Any] = {
+        do {
+            guard let filePath = Bundle.main.path(forResource: "verify", ofType: "json")
+            else { return [:] }
+            let data = try Data(contentsOf: URL(fileURLWithPath: filePath), options: .mappedIfSafe)
+            
+            guard let jsonDictionary = try JSONSerialization.jsonObject(with: data, options: []) as? [String: Any] else {
+                print("Failed to parse JSON data.")
+                return [:]
+            }
+            
+            return jsonDictionary
+        } catch {
+            print("Error reading JSON file: \(error)")
+            return [:]
         }
     }()
     
-    private var sampleData: [String: Any] = {
+    private var answerInputData: [String: Any] = {
         do {
-            guard let filePath = Bundle.main.path(forResource: "result", ofType: "json")
+            guard let filePath = Bundle.main.path(forResource: "train", ofType: "json")
             else { return [:] }
             let data = try Data(contentsOf: URL(fileURLWithPath: filePath), options: .mappedIfSafe)
             
@@ -57,27 +85,37 @@ struct TestModelView: View {
     }()
     
     
+    
+    
     private func predict() {
-        let x = sampleData["x"] as! [[Double]]
-        let y = sampleData["mobile_y"] as! [[NSNumber]]
+        // model 가져오기
+        guard let filePath = Bundle.main.path(forResource: "model \(selectedModelIndex)", ofType: "ptl"),
+              let module = TorchModule(fileAtPath: filePath) else { return }
         
-        for i in (0..<x.count) {
-            guard
-                let pixelBuffer = prepareBuffer(from: x[i]),
-                let outputs = module2.predict(buffer: pixelBuffer)
-            else { return }
+        guard let answerInput = answerInputData["sample \(selectedModelIndex)"] as? [Double],
+            let pixelBuffer = prepareBuffer(from: answerInput),
+            let outputs = module.predict(buffer: pixelBuffer)
+        else { return }
+        
+        
+        let answer = convertNSMutableArrayToFloatArray(outputs).map {roundToBinary($0)}
+        
+        for i in 1..<6 {
+            guard let x = testData["sample \(i)"] as? [[Double]] else { return }
             
-            let floatResult = convertNSMutableArrayToFloatArray(outputs)
-            let answer = y[i].map {Int(truncating: $0)}
-            
-            var compareResult: Bool = true
-            for j in (0..<128) {
-                if roundToBinary(floatResult[j]) != answer[j] {
-                    compareResult = false
-                    break
-                }
+            for j in (0..<x.count) {
+                guard
+                    let pixelBuffer = prepareBuffer(from: x[j]),
+                    let outputs = module.predict(buffer: pixelBuffer)
+                else { return }
+                
+                let floatResult = convertNSMutableArrayToFloatArray(outputs)
+                
+                let tempResult = floatResult.map {roundToBinary($0)}
+                
+                result.append("image \(i)-\(j+1)로 검증: \(tempResult == answer)")
+                
             }
-            result.append("\(i+1)th 결과: \(compareResult)")
         }
     }
     
@@ -104,28 +142,6 @@ extension TestModelView {
         return buffer
     }
     
-    //    func convertToRawPointer(_ array: [Double]) -> UnsafeMutableRawPointer? {
-    //        // Calculate the total size of the buffer needed in bytes
-    //        let bufferSize = array.count * MemoryLayout<Double>.stride
-    //
-    //        // Allocate memory for the buffer using UnsafeMutableRawPointer
-    //        let buffer = UnsafeMutableRawPointer.allocate(byteCount: bufferSize, alignment: MemoryLayout<Double>.alignment)
-    //
-    //        // Bind the memory to the Double type
-    //        let typedBuffer = buffer.bindMemory(to: Double.self, capacity: array.count)
-    //
-    //        // Copy the elements of the array into the buffer
-    //        array.withUnsafeBytes { (arrayBuffer: UnsafeRawBufferPointer) in
-    //            guard let sourcePointer = arrayBuffer.baseAddress else {
-    //                return
-    //            }
-    //            typedBuffer.initialize(from: sourcePointer.bindMemory(to: Double.self, capacity: array.count), count: array.count)
-    //        }
-    //
-    //        // Return the UnsafeMutableRawPointer to the allocated and initialized buffer
-    //        return buffer
-    //    }
-    
     private func convertNSMutableArrayToFloatArray(_ nsArray: NSMutableArray) -> [Float] {
         var floatArray = [Float]()
         
@@ -135,5 +151,4 @@ extension TestModelView {
         
         return floatArray
     }
-    
 }
